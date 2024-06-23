@@ -6,17 +6,36 @@ public class ex6 {
 	public static void main (String[] arg) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Nhap so xe: ");
-		int a = Integer.parseInt(scanner.nextLine());
-		
-		int first = a/10000;
-		int second = (a/1000) % 10;
-		int third = (a/100) % 10;
-		int fourth = (a/10) % 10;
-		int fifth = a % 10;
-		
-		int total = (first + second + third + fourth + fifth) % 10;
-		
-		System.out.println("Xe duoc " + total + " nut !");
+		String input;
+
+        while (true) {
+            System.out.print("Nhap so xe: ");
+            input = scanner.nextLine();
+
+            if (check(input)) {
+                break;
+            } else {
+                System.out.println("Nhap sai, chi duoc nhap duoi 5 chu so");
+                System.out.println("Vui long nhap lai");
+            }
+        }
+
+        int point = 0;
+
+        for (int i = 0; i < input.length(); i++) {
+            char num = input.charAt(i);		// returns char at position i
+            point = Integer.parseInt(String.valueOf(num)) + point;
+        }
+
+        int total = point % 10;
+
+        System.out.println("Xe duoc " + total + " nut !");
 	}
+
+	public static boolean check(String input) {
+        if (input.length() > 5) {
+            return false;
+        }
+        return true;
+    }
 }
