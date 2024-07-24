@@ -1,22 +1,25 @@
-package main.oop.ex;
+package main.oop.ss1.ex1;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class StudentManager {
     public static void main(String[] args) {
-        int num = 2;
+        Scanner sc = new Scanner(System.in);
 
-        ArrayList<student> sts = new ArrayList<>();
+        System.out.print("Nhap so luong: ");
+        int num = sc.nextInt();
+        ArrayList<Student> sts = new ArrayList<>();
 
         for (int i = 0; i < num; i++) {
             System.out.println("########## Nhap thong tin sinh vien ###############");
-            student st = new student();
+            Student st = new Student();
             st.input();
             sts.add(st);
         }
 
         for (int i = 0; i < num; i++) {
-            System.out.printf("######## Thong tin Sinh vien %d ###########", i + 1);
+            System.out.printf("######## Thong tin Sinh vien %d ########### \n", i + 1);
             sts.get(i).output();
         }
     }

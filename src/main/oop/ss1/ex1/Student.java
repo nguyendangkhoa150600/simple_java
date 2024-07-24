@@ -1,4 +1,4 @@
-package main.oop.ex1;
+package main.oop.ss1.ex1;
 
 import java.util.Scanner;
 
