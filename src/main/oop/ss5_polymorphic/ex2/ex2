@@ -1,0 +1,20 @@
+                                                 |  Không có casting    |   Downcasting    |   Upcasting    |   compile-time |   run-time
+HocVien hocVien1 = new HocVien();                |          o           |                  |                |                |
+HocVien hocVien1 = new (SinhVien) hocVien1;      |                      |        o         |                |                |
+ChuyenVien hocVien3 = (ChuyenVien) hocVien2;     |                      |                  |                |                |       o
+NVChinhThuc hocVien4 = hocVien3;                 |                      |                  |       o        |                |
+HocVien hocVien5 = hocVien3;                     |          o           |                  |                |                |
+HocVien hocVien6 = (HocVien) hocVien2;           |                      |                  |       o        |                |
+HocVien hocVien7 = (NVQuanLy) hocVien6;          |                      |        o         |                |                |
+NVChinhThuc hocVien8 = (NVChinhThuc) hocVien7;   |                      |        o         |                |                |       o
+SinhVien hocVien9 = (SinhVien) hocVien3;         |                      |        o         |                |                |
+HocVien hocVien10 = new SinhVien();              |                      |                  |       o        |                |
+ChuyenVien hocVien11 = (ChuyenVien) hocVien10;   |                      |        o         |                |                |
+
+
+HocVien
+  ├── SinhVien
+  ├── NVThuViec
+  └── NVChinhThuc
+        ├── ChuyenVien
+        └── NVQuanLy
