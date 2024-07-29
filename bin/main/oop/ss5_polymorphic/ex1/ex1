@@ -1,0 +1,29 @@
+TH1:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH2:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH3:
+Không có vì Lớp cha sử dụng a() private nên lớp con có thể dụng phương thức a() không bị OR
+
+TH4:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH5:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH6:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH7:
+OL vì lớp cha và con gọi phương thức khác kiểu dữ liệu
+
+TH8:
+OR vì lớp con gọi chung phương thức với lớp cha
+
+TH9:
+OL vì lớp cha và con gọi phương thức khác kiểu dữ liệu
+
+TH10:
+Không có vì ớp cha và con gọi khác phương thức
